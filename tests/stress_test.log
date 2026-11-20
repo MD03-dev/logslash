@@ -1,0 +1,7 @@
+{"level": "info", "msg": "Server khoi dong", "ts": "2025-05-01T10:00:00Z"}
+{"level": "error", "msg": "Loi mat ket noi DB", "ts": "2025-05-01T10:01:00Z"}
+{"level": "error", "msg": "Dong JSON nay bi hong thieu ngoac" 
+May  1 10:02:00 myhost sshd[999]: Accepted password for root
+{"level": "warn", "msg": "Dung luong o dia sap day", "ts": "2025-05-01T10:03:00Z"}
+
+this is a plain text line without structure
