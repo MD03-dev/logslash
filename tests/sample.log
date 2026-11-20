@@ -1,0 +1,7 @@
+{"level": "info", "msg": "server started", "port": 8080}
+{"level": "warn", "msg": "high memory", "usage": 0.85}
+Jan  5 12:00:00 myhost sshd[1234]: Accepted password for user
+Jan  5 12:00:05 myhost sshd[1234]: session opened
+this is a plain text line without structure
+another plain line
+{"level": "error", "msg": "connection refused"}

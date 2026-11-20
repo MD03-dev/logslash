@@ -1,0 +1,6 @@
+{"level": "info", "msg": "server started", "ts": "2025-01-05T12:00:00Z", "source": "api"}
+{"level": "error", "msg": "connection timeout to db", "ts": "2025-01-05T12:00:05Z", "source": "api"}
+{"level": "warn", "msg": "slow query detected", "ts": "2025-01-05T12:00:10Z", "source": "db"}
+{"level": "error", "msg": "timeout reading config", "ts": "2025-01-05T12:00:15Z", "source": "config"}
+{"level": "debug", "msg": "cache hit", "ts": "2025-01-05T12:00:20Z", "source": "cache"}
+{"level": "info", "msg": "request ok", "ts": "2025-01-05T12:00:25Z", "source": "api"}

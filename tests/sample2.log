@@ -1,0 +1,5 @@
+Jan  5 12:00:00 myhost sshd[1234]: Accepted password for user
+Jan  5 12:00:05 myhost sshd[1234]: session opened
+192.168.1.10 - - [05/Jan/2025:12:00:10 +0000] "GET /api/users HTTP/1.1" 200 1234
+INFO | 2025-01-05T12:00:15Z | user login success
+WARN | 2025-01-05T12:00:20Z | slow query detected
