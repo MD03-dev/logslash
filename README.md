@@ -45,3 +45,24 @@ Dự án phân phối dưới giấy phép **MIT**.
 - **Hỗ trợ Pipe/Stdin:** Đọc log trực tiếp từ luồng, không cần lưu ra file. Ví dụ: `tail -f /var/log/syslog | logslash filter - --level error`
 - **Tự động chống Crash:** Tự động bỏ qua các dòng log bị lỗi/hỏng (ví dụ JSON thiếu ngoặc) mà không làm gián đoạn tool.
 - **Tự động tắt màu:** Nhận biết khi nào xuất ra file (pipe) để tự động tắt màu sắc, giúp file text sạch sẽ.
+
+---
+
+## 🔥 Tính năng nâng cao (Dành cho dân Hệ thống)
+
+Bạn có thể đọc log **trực tiếp từ ống dẫn (Pipe)** mà không cần lưu ra file, giúp theo dõi log realtime cực nhanh mà không lo tràn RAM. Dấu `-` dùng để báo cho tool biết "hãy đọc từ luồng, đừng đọc từ file".
+
+**1. Xem log realtime (chỉ lấy lỗi):**
+```bash
+tail -f /var/log/syslog | logslash filter - --level error -o table
+```
+
+**2. Chuyển log Nginx thành file CSV:**
+```bash
+cat /var/log/nginx/access.log | logslash parse - -o csv > report.csv
+```
+
+**3. Bỏ qua dòng log bị lỗi (không bị crash):**
+```bash
+cat file_log_hong.txt | logslash parse -
+```
