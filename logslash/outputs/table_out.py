@@ -72,7 +72,7 @@ def _pad(s, width):
     return s + " " * max(0, width - _visible_len(s))
 
 
-def output_table(records, stream, use_color=None, max_width=DEFAULT_MAX_WIDTH):
+def output_table(records, stream, use_color=None, max_width=60):
     """In bảng ASCII.
 
     Args:
@@ -82,6 +82,7 @@ def output_table(records, stream, use_color=None, max_width=DEFAULT_MAX_WIDTH):
         max_width: độ rộng tối đa cột message
     """
     if use_color is None:
+        # Tự động tắt màu nếu đang pipe ra file
         use_color = hasattr(stream, "isatty") and stream.isatty()
 
     if not records:
