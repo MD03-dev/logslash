@@ -1,0 +1,12 @@
+{
+  "patterns": [
+    {
+      "name": "nginx_access",
+      "regex": "^(?P<source>\\S+) - - \\[(?P<timestamp>[^\\]]+)\\] \"(?P<message>[^\"]+)\" \\d+ \\d+$"
+    },
+    {
+      "name": "custom_app",
+      "regex": "^(?P<level>[A-Z]+) \\| (?P<timestamp>\\S+) \\| (?P<message>.*)$"
+    }
+  ]
+}
