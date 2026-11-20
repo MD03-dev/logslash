@@ -80,7 +80,7 @@ check "cli parse sample2 có regex" \
 check "filter level error" \
     "python -m logslash filter tests/sample3.log --ndjson --level error" "connection timeout"
 check "filter level error chỉ 2 record" \
-    "python -m logslash filter tests/sample3.log --ndjson --level error --stats 2>&1 | grep -c 'Sau lọc:  2'" "1"
+    "python -m logslash filter tests/sample3.log --ndjson --level error --stats 2>&1 | grep -c '2 record'" "1"
 check "filter level_min warn" \
     "python -m logslash filter tests/sample3.log --ndjson --level-min warn" "slow query"
 check "filter level_min warn không có info" \
