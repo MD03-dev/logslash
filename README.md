@@ -1,15 +1,18 @@
-### 🚀 logslash
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C"/>
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License"/>
+  <img src="https://img.shields.io/github/stars/MD03-dev/logslash?style=for-the-badge&color=blue" alt="Stars"/>
+</p>
 
-**CLI tool lọc và phân tích log hỗn hợp — JSON, syslog, plain text**
+<h1 align="center">⚡ logslash</h1>
 
-[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/MD03-dev/logslash?style=flat-square&color=blue)](https://github.com/MD03-dev/logslash)
+<p align="center">
+  <b>CLI tool lọc và phân tích log hỗn hợp — JSON, syslog, plain text</b><br>
+  Chạy mượt mà trên Termux, không dependency nặng, tăng tốc bằng lõi C.
+</p>
 
 ---
-
-`logslash` sinh ra từ một vấn đề rất cụ thể: log ở đâu cũng có, nhưng mỗi service một format. `grep` thì không hiểu JSON, `jq` thì không hiểu syslog. `logslash` gom tất cả về một mối: **detect → parse → filter → output** trong một lệnh duy nhất.
 
 #### ✨ Tính năng nổi bật
 - 🚀 **Tự động nhận diện:** Nhận biết JSON, syslog, plain text không cần cấu hình.
