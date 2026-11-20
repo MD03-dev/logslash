@@ -37,3 +37,8 @@
 Mọi đóng góp đều được hoan nghênh! Hãy xem file [CONTRIBUTING.md](CONTRIBUTING.md).
 Nếu thấy dự án hữu ích, hãy tặng một ⭐ (Star) nhé!
 Dự án phân phối dưới giấy phép **MIT**.
+
+## 🔥 Tính năng nâng cao (Dành cho dân Hệ thống)
+- **Hỗ trợ Pipe/Stdin:** Đọc log trực tiếp từ luồng, không cần lưu ra file. Ví dụ: `tail -f /var/log/syslog | logslash filter - --level error`
+- **Tự động chống Crash:** Tự động bỏ qua các dòng log bị lỗi/hỏng (ví dụ JSON thiếu ngoặc) mà không làm gián đoạn tool.
+- **Tự động tắt màu:** Nhận biết khi nào xuất ra file (pipe) để tự động tắt màu sắc, giúp file text sạch sẽ.
