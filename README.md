@@ -66,3 +66,40 @@ cat /var/log/nginx/access.log | logslash parse - -o csv > report.csv
 ```bash
 cat file_log_hong.txt | logslash parse -
 ```
+
+---
+
+## 🪟 Windows Installation
+
+Since `logslash` uses Bash scripts and a C extension, the recommended way to run it on Windows is via **WSL (Windows Subsystem for Linux)**. However, you can also run it natively using PowerShell.
+
+### Option 1: WSL (Recommended - Full Performance)
+1. Open PowerShell as Administrator and install WSL:
+   ```powershell
+   wsl --install
+   ```
+2. Restart your computer, open Ubuntu from the Start menu.
+3. Run the standard Linux installation commands:
+   ```bash
+   sudo apt update && sudo apt install python3 python3-pip build-essential git -y
+   git clone https://github.com/MD03-dev/logslash.git
+   cd logslash
+   bash scripts/setup.sh
+   ```
+
+### Option 2: PowerShell (Native Windows)
+1. Install [Python for Windows](https://www.python.org/downloads/) and [Git](https://git-scm.com/download/win). Make sure to check "Add Python to PATH" during installation.
+2. Open PowerShell and clone the repository:
+   ```powershell
+   git clone https://github.com/MD03-dev/logslash.git
+   cd logslash
+   ```
+3. Run the tool directly using Python (Note: Use `Get-Content` instead of `cat` for piping):
+   ```powershell
+   # Detect format
+   python -m logslash detect tests/sample.log
+
+   # Filter logs (PowerShell pipe example)
+   Get-Content tests/sample3.log | python -m logslash filter - --level error -o table
+   ```
+
