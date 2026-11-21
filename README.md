@@ -14,7 +14,7 @@
 
 ---
 
-#### ✨ Tính năng nổi bật
+#### ✨ Tính năng nổi bật.
 - 🚀 **Tự động nhận diện:** Nhận biết JSON, syslog, plain text không cần cấu hình.
 - 🧩 **Hỗ trợ Regex:** Thêm pattern cho các định dạng log lạ (Nginx, Apache...).
 - 🎯 **Bộ lọc mạnh mẽ:** Lọc theo level, level-min, source, contains, since, until.
